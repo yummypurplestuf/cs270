@@ -1,0 +1,36 @@
+h1, h3 {
+    background-color: green;
+    color: white;
+}
+
+h3 {
+    border: 5px solid blue;
+    padding: 0px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.special {
+    color: red;
+}
+
+h1.special {
+    font-family: 'Courier';
+}
+
+p {
+    font-family: 'Arial'
+}
+
+#hw {
+    font-weight: 100
+}
+
+ul li {
+    font-style: normal;
+}
+
+h3:hover {
+    color: yellow;
+    background-color: blue;
+}
