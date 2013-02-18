@@ -6,13 +6,15 @@ app = Flask(__name__)
 
 
 # Route requests to the top level... say Hello
-@app.route('/')
-def index():
-    return 'Hello, World'
+
 
 
 # Assignment 1: A haphazard page showing the most common HTML tags
-@app.route('/assignment-1', '/assignment-2', '/assignment-3')
+@app.route('/', '/assignment-1', '/assignment-2', '/assignment-3')
+
+def index():
+    return redirect(url_for('static', filename='/'))
+
 def assignment_1():
     return redirect(url_for('static', filename='assignment-1.html'))
 
