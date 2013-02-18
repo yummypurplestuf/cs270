@@ -13,16 +13,19 @@ app = Flask(__name__)
 @app.route('/', '/assignment-1', '/assignment-2', '/assignment-3')
 
 def index():
-    return redirect(url_for('static', filename='/'))
+    return redirect(url_for('/', filename='/'))
 
 def assignment_1():
     return redirect(url_for('static', filename='assignment-1.html'))
+    <a href="/static/assignment-1.html">assignment-1</a>
 
 def assignment_1():
-    return redirect(url_for('static', filename='assignment-2.html'))
+    return redirect(url_for('static', filename='assignment-1.html'))
+    <a href="/static/assignment-2.html">assignment-2</a>
 
 def assignment_1():
-    return redirect(url_for('static', filename='assignment-3.html'))
+    return redirect(url_for('static', filename='assignment-1.html'))
+    <a href="/static/assignment-3.html">assignment-3</a>
 
 # A module runner to make our app go!
 if __name__ == '__main__':
