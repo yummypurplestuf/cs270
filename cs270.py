@@ -1,6 +1,8 @@
 import os
 from flask import Flask, redirect, url_for
 
+# Make all changes for routing in this file and not app.py
+
 app = Flask(__name__)
 
 @app.route('/')
